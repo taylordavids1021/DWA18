@@ -8,6 +8,27 @@ function App() {
 
   return (
     <>
+
+    {/* Nav on top */}
+    {/**
+     * summary
+     * youtube link
+     * few music selections
+     * what is my podcast
+     * social media links/icons big
+     * why choose my podcast
+     * small navbar at the bottom
+     * social media links/icons smal
+     * footer
+     * 
+     * right filter 
+     * search 
+     * category
+     * mood
+     * genres
+     * filter button 
+     * reset filter button
+     */}
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -16,7 +37,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>Testing</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
