@@ -62,7 +62,7 @@ h1{
 /* -------------------------------------------- FILTER -------------------------------------------- */
 .search--pannel--section {
   max-width: 50%;
-  margin: auto;
+  margin-left: auto;
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   background-color: white;
