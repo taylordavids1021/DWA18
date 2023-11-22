@@ -5,6 +5,7 @@ import './App.css'
 import Navbar from './Navbar.jsx'
 import Filter from './Filter.jsx'
 import Footer from './Footer.jsx'
+import SocialMediaLinks from './SocialMediaLinks.jsx'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -35,7 +36,7 @@ function App() {
      
       <Navbar />
       <Filter />
-      <h1>Testing</h1>
+      <SocialMediaLinks />
       <Footer />
     </>
   )
