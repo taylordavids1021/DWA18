@@ -24,7 +24,7 @@ return (
     <>
       <div
         style={{
-          backgroundImage: 'url("./Podcast-app/public/podcastIMG3.jpg" )',
+          backgroundImage: 'url("./images/banner" )',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           minHeight: '100vh',
