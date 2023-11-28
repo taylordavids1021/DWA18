@@ -1,20 +1,15 @@
-* {
-  box-sizing: border-box;
+/* -------------------------------------------- MY COMPONENT STYLING -------------------------------------------- */
+@media (min-width: 375px) {
+  /* CSS rules for narrow screens (iPhone SE) */
+  .hero--banner {
+    background-image: url(./images/banner.png);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 98rem;
+  }
 }
-
-body, html {
-  font-family: "Karla", sans-serif;
-  margin: 0;
-}
-h1{
-  margin: 0;
-}
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-} */
 .navbar--section{
   display: flex;
   align-items: center;
@@ -45,14 +40,9 @@ h1{
   letter-spacing: 0.3rem;
 }
 /* -------------------------------------------- HERO__BANNER ----------------------------------------------------- */
-.hero--banner {
-  background-image: url(./images/banner.png);
-  /* background-position: center; */
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+/* .hero--banner {
   height: 50rem;
-}
+} */
 .filter--title {
   text-align: center;
   font-family: 'Dancing Script', 'cursive';
@@ -60,6 +50,10 @@ h1{
   font-size: 5rem;
 }
 /* -------------------------------------------- FILTER -------------------------------------------- */
+/* -------------------------------------------- ABOUT --------------------------------------------  */
+.about--section {
+  color: white;
+}
 .search--pannel--section {
   max-width: 50%;
   margin-left: auto;
@@ -91,4 +85,8 @@ footer {
   background: linear-gradient(90deg, #060a0d 12%, #7e3a76 100%);
   color: white;
   padding: 0.5rem 1rem;
+}
+/* LoginForm */
+.main-heading {
+  color: white;
 }
