@@ -1,0 +1,25 @@
+	- Site deployed through Netfly
+	- Look and display corectly iphone SE- responsive
+	- Use favicon
+	- Use Meta tag
+	- Use fetch method,inital state, loading state
+	- view details of the show
+	- how to create auto play in javascript
+	- podcast react app
+	- view only season 5, next page
+	- toggle same page
+	- json array, printed accordinly
+	- go back button
+	- mark as a favi
+	- remove eposoide
+	- search button name
+	- search the, all info with the pop up
+	- click favi show cureent date
+	- audio player in javscript awalys visible
+	- remember the last audio played
+	- page that shows your history
+	- app remember time stamp when closing	
+	- carasole
+	- login page
+	- superbase storage
+	- share the favi as a url
