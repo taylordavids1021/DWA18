@@ -36,8 +36,8 @@ return (
       >
         <video src="/Podcast-app/public/4K_5.mp4" type="video/mp4" id="myVideo"></video>
         <div className='form-head' >
-          <h1 className ='main-heading'>Welcome Back To My
-          <span> Podcast</span>
+          <h1 className ='main-heading'>Welcome Back To
+          <span>My Podcast</span>
           </h1>
         </div>
         <form
