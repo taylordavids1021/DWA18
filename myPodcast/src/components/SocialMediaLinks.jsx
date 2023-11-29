@@ -1,4 +1,6 @@
-// Social Media Icons and links
+/** 
+ *  Social Media Icons and links
+ */
 export default function SocialMediaLinks() {
      
     return (
