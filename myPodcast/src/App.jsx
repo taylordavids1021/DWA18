@@ -4,11 +4,12 @@
  * Provides a seamless experience for users to explore podcasts, manage favorites, and track listening history.
  */
 import { useEffect, useState } from 'react';
+// import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Favorite from './components/Favorite';
-import Preview from './components/Preview';
+import ShowPodcast from './components/ShowPodcast';
 import History from './components/History';
 import Authentication from './components/loginForm';
 import SocialMediaLinks from './components/SocialMediaLinks';
@@ -112,6 +113,7 @@ export default function App() {
    */
   return (
     <>
+    {/* <switch> */}
    { isAuthenticated === false ?  <Authentication
      email={email}
      setEmail={setEmail}
@@ -124,26 +126,30 @@ export default function App() {
       <br />
       <br />
       {currentPage === 'home' && (
+        <>
         <Home onPodcastClick={setSelectedPodcast} selectedPodcast={selectedPodcast} />
+        {/* <Route path="/Home" exact component={Home} /> */}
+        </>
       )}
       {currentPage === 'favorite' && (
-        <Favorite favorites={favorites} setFavorites={setFavorites} />
+        <>
+          <Favorite favorites={favorites} setFavorites={setFavorites} />
+          {/* <Route path="/Favorite" component={Favorite} /> */}
+        </>
       )}
       {currentPage === 'preview' && (
-        <Preview
+        <ShowPodcast
           podcastId={selectedPodcast?.id}
           onFavoriteClick={handleFavoriteClick}
           onEpisodeComplete={handleEpisodeComplete}
           onEpisodeProgress={handleEpisodeProgress}
-         
         />
       )}
       {currentPage === 'history' && <History />}
+      {/* <Route path="/History" component={History} /> */}
       <SocialMediaLinks />
      </>}
-    
-      
-
+     {/* </switch> */}
     </>
   );
 }
