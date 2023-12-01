@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import PropTypes from 'prop-types';
 // import { Link } from 'react-router-dom';
+import PreviousButton from '../assets/previous.png'
 
 /** 
  * Define the showPodcast component
@@ -80,7 +81,7 @@ const ShowPodcast = ({ podcastId, onFavoriteClick, onEpisodeComplete, onEpisodeP
     <div className="showPodcast--container">
       <div className='titles'>
         {/* <Link to="./components/Home">Go to Home</Link>         */}
-        <img className='previous--icon' src='/public/images/previous.png'></img>
+        <img className='previous--icon' src={PreviousButton}></img>
         <h1>Preview Podcast</h1>
       </div>
       {/* Display podcast title and description */}

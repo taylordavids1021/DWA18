@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import PreviousButton from '../assets/previous.png'
 // import { Link } from 'react-router-dom';
 
 const History = () => {
@@ -89,7 +90,7 @@ return () => clearTimeout(timer);
     <div className="history-container">
       <div className='titles'>
         {/* <Link to="./components/Home">Go to Home</Link>         */}
-        <img className='previous--icon' src='/public/images/previous.png'></img>
+        <img className='previous--icon' src={PreviousButton}></img>
         <h1>Listening History</h1>
       </div>
       {listeningHistory.length > 0 ? (
