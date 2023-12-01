@@ -5,6 +5,7 @@ import About from './About'
 import Footer from './Footer'
 // import favoriteIcon from '../assets/filledStar.png';
 import nonFavoriteIcon from '../assets/star.png';
+// import PodcastCarousel from './PodcastCarousel'
 
 const Home = ({ onPodcastClicks, selectedPodcast }) => {
   /** 
@@ -133,7 +134,10 @@ const Home = ({ onPodcastClicks, selectedPodcast }) => {
     'News',
     'Kids and Family',
   ];
-
+  /**
+   * Carousel array
+   */
+  // const podcastIds = [{podcast.id}];
   /**
   *  Render the Home component
   *  Display HTML format along with JavaScript syntax
@@ -176,6 +180,7 @@ const Home = ({ onPodcastClicks, selectedPodcast }) => {
       {loading ? (
         <p>Loading podcast list...</p>
       ) : (
+        // <PodcastCarousel podcastIds={podcastIds} />
         <ul className="show--list">
           {sortedPodcasts.map((show) => (
             // Trigger the handlePodcastClicks function with the corresponding show object when clicked 
