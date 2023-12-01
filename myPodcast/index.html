@@ -29,38 +29,16 @@
         }
 
     /* Additional CSS for styling other page elements can be added here */
-    /* Styles for the back-to-top button */
-        #back-to-top {
-            /* display: none; */
-            position: sticky;
-            bottom: 20px;
-            right: center; /* Adjust the right position for moving it more to the right */
-            background-color: transparent;
-            color: transparent;
-            border: none;
-            border-radius: 20rem; /* Adjust the border-radius for a circular button */
-            padding: 8px 17px; /* Adjust padding for a smaller button */
-            font-size: 14px; /* Adjust font size for smaller text */
-            font-weight: bolder;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: transform 0.2s, background-color 0.2s, color 0.2s;
-        }
-
-        #back-to-top:hover {
-            background-color: #7e3571; /* Change background color on hover */
-            color: white; /* Change text color on hover */
-            transform: scale(1.1); /* Scale up the button on hover */
-        }
+    
     </style>
   </head>
-  <body>
-    <div class="Heading">
+  <body id="home">
+    <div id="top" class="Heading">
     <!-- Content for the Heading div -->
   </div>
   <div id="root"></div>
-  <!-- Back to Top button -->
-  <button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
+  <!-- Back to Top Icon -->
+  <a href="#top"><img class="up" src="./public/up-arrow.png"></a>
   <script type="module" src="./src/main.jsx"></script>
   <script>
         // JavaScript function to scroll to the top of the page
