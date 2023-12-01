@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import PropTypes from 'prop-types';
+// import { Link } from 'react-router-dom';
 
 /** 
  * Define the showPodcast component
@@ -35,7 +36,7 @@ const ShowPodcast = ({ podcastId, onFavoriteClick, onEpisodeComplete, onEpisodeP
    *  Render different UI based on loading and podcast data
    */
   if (loading) {
-    return <p className='loading--text'>Loading...</p>;
+    return <p className='loading--text'>Loading Viewed Podcast...</p>;
   }
 
   if (!podcast) {
@@ -78,7 +79,8 @@ const ShowPodcast = ({ podcastId, onFavoriteClick, onEpisodeComplete, onEpisodeP
   return (
     <div className="showPodcast--container">
       <div className='titles'>
-        <img className='previous--icon' src='/public/previous.png'></img>
+        {/* <Link to="./components/Home">Go to Home</Link>         */}
+        <img className='previous--icon' src='/public/images/previous.png'></img>
         <h1>Preview Podcast</h1>
       </div>
       {/* Display podcast title and description */}
