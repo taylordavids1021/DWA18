@@ -58,7 +58,10 @@ const Favorite = ({ favorites, setFavorites }) => {
    */
   return (
     <div className="favorite--container">
-      <h1>Your Favorites</h1>
+      <div className='titles'>
+        <img className='previous--icon' src='/public/previous.png'></img>
+        <h1>Your Favorites</h1>
+      </div>
       <div className="favorite--controls">
         {/* Search input */}
         <input
