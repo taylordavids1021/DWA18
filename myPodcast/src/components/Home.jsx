@@ -81,7 +81,6 @@ const Home = ({ onPodcastClicks, selectedPodcast }) => {
     show.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  
   /** 
    * Filter podcasts based on selected genre
    */
@@ -108,7 +107,6 @@ const Home = ({ onPodcastClicks, selectedPodcast }) => {
     }
   });
 
-  
   /** 
    * Genre data for the dropdown which is stored in an object
    */
@@ -124,13 +122,13 @@ const Home = ({ onPodcastClicks, selectedPodcast }) => {
     'Kids and Family',
   ];
 
-   /**
-    *  Render the Home component
-    *  Display HTML format along with JavaScript syntax
-    *  Form Input
-    *  Selective dropdown
-    *  Option to select genre
-    */
+  /**
+  *  Render the Home component
+  *  Display HTML format along with JavaScript syntax
+  *  Form Input
+  *  Selective dropdown
+  *  Option to select genre
+  */
   return (
     <div className="home-container">
       <h1>All Shows</h1>
@@ -150,6 +148,8 @@ const Home = ({ onPodcastClicks, selectedPodcast }) => {
       </div>
       <div className="genres--container">
         <h2>Genres</h2>
+        {/*  This specifies that the handleGenreChanges function will 
+        be called whenever the user selects a different option in the dropdown */}
         <select value={selectedGenre} onChange={handleGenreChanges}>
           <option value="">Select a Genre</option>
           {genreData.map((genre) => (
@@ -166,6 +166,7 @@ const Home = ({ onPodcastClicks, selectedPodcast }) => {
       ) : (
         <ul className="show--list">
           {sortedPodcasts.map((show) => (
+            // Trigger the handlePodcastClicks function with the corresponding show object when clicked 
             <li key={show.id} onClick={() => handlePodcastClicks(show)}>
               <div className={`show--info ${show.id === selectedPodcast?.id ? 'selected' : ''}`}>
                 <img src={show.image} className="show--image" alt={show.title} />
@@ -185,7 +186,7 @@ const Home = ({ onPodcastClicks, selectedPodcast }) => {
   );
 };
 
- /** 
+/** 
   * Render the Home component
   */
 Home.propTypes = {
@@ -199,4 +200,3 @@ export default Home;
  * Users can click on a podcast to view more details.
  * Offers search and sorting options to find podcasts easily.
  */
-
