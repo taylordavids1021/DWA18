@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 // import { Link } from 'react-router-dom';
+import PreviousButton from '../assets/previous.png'
+// import { supabase } from './services/supabase.jsx';
 
 const Favorite = ({ favorites, setFavorites }) => {
   /** 
@@ -61,7 +63,7 @@ const Favorite = ({ favorites, setFavorites }) => {
     <div className="favorite--container">
       <div className='titles'>
         {/* <Link to="/Home">Go to Home</Link>         */}
-        <img className='previous--icon' src='/public/images/previous.png'></img>
+        <img className='previous--icon' src={PreviousButton}></img>
         <h1>Your Favorites</h1>
       </div>
       <div className="favorite--controls">
