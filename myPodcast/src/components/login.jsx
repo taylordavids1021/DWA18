@@ -1,9 +1,9 @@
 /**
- * Importing the supabase constant from the SupabaseClient.js file allows you to centralize the 
+ * Importing the supabase constant from the supabase.jxs file allows you to centralize the 
  * initialization and management of the Supabase client instance. This can make your code more 
  * modular and easier to maintain
  */
-import { supabase } from './SupabaseClient';
+import { supabase } from './services/supabase.jsx';
 
 /** 
  * Define the Login component
