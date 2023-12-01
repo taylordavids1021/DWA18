@@ -3,7 +3,8 @@ import axios from 'axios';
 import PropTypes from 'prop-types';
 import About from './About'
 import Footer from './Footer'
-
+// import favoriteIcon from '../assets/filledStar.png';
+import nonFavoriteIcon from '../assets/star.png';
 
 const Home = ({ onPodcastClicks, selectedPodcast }) => {
   /** 
@@ -106,7 +107,18 @@ const Home = ({ onPodcastClicks, selectedPodcast }) => {
       return new Date(b.updated) - new Date(a.updated);
     }
   });
-
+  /**
+   * HandleFavoriteClick
+   */
+  // const FavoriteComponent = () => {
+  //   const [isFavorite, setIsFavorite] = useState(false);
+  //   const [iconSrc, setIconSrc] = useState(nonFavoriteIcon);
+  
+  //   const handleFavoriteClick = () => {
+  //     setIsFavorite(!isFavorite);
+  //     setIconSrc(isFavorite ? nonFavoriteIcon : favoriteIcon);
+  //   };
+  // }
   /** 
    * Genre data for the dropdown which is stored in an object
    */
@@ -173,6 +185,14 @@ const Home = ({ onPodcastClicks, selectedPodcast }) => {
                 <div className="show--details">
                   <h3 className="show--title">{show.title}</h3>
                   <p className="show--description">{show.description}</p>
+                  {/* <img
+                       src={iconSrc}
+                       alt={isFavorite ? 'Favorite' : 'Not Favorite'}
+                       onClick={handleFavoriteClick}
+                       style={{ cursor: 'pointer' }}
+                    /> */}
+                  <img className='favorite--icon ' src={nonFavoriteIcon} alt="Favorite" />
+                  {/* <img src={require('../public/images/star.png').default} alt="Favorite" />; */}
                   <p className="show--seasons">Numbers of seasons: {show.seasons}</p>
                   <p className="show--updated">Updated: {formatDate(show.updated)}</p>
                 </div>
