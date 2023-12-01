@@ -59,6 +59,7 @@ const Favorite = ({ favorites, setFavorites }) => {
   /** 
    * Render the Favorite component
    */
+  
   return (
     <div className="favorite--container">
       <div className='titles'>
