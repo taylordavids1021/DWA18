@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const History = () => {
   /**
@@ -88,7 +88,8 @@ return () => clearTimeout(timer);
   return (
     <div className="history-container">
       <div className='titles'>
-        <Link to="/">Go to Home</Link>        
+        {/* <Link to="./components/Home">Go to Home</Link>         */}
+        <img className='previous--icon' src='/public/images/previous.png'></img>
         <h1>Listening History</h1>
       </div>
       {listeningHistory.length > 0 ? (

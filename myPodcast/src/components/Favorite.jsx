@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+// import { Link } from 'react-router-dom';
 
 const Favorite = ({ favorites, setFavorites }) => {
   /** 
@@ -59,7 +60,8 @@ const Favorite = ({ favorites, setFavorites }) => {
   return (
     <div className="favorite--container">
       <div className='titles'>
-        <img className='previous--icon' src='/public/previous.png'></img>
+        {/* <Link to="/Home">Go to Home</Link>         */}
+        <img className='previous--icon' src='/public/images/previous.png'></img>
         <h1>Your Favorites</h1>
       </div>
       <div className="favorite--controls">
