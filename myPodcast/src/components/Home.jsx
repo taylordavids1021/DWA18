@@ -6,6 +6,7 @@ import Footer from './Footer'
 // import favoriteIcon from '../assets/filledStar.png';
 import nonFavoriteIcon from '../assets/star.png';
 // import PodcastCarousel from './PodcastCarousel'
+import { genreData } from './genreData';
 
 const Home = ({ onPodcastClicks, selectedPodcast }) => {
   /** 
@@ -120,20 +121,7 @@ const Home = ({ onPodcastClicks, selectedPodcast }) => {
   //     setIconSrc(isFavorite ? nonFavoriteIcon : favoriteIcon);
   //   };
   // }
-  /** 
-   * Genre data for the dropdown which is stored in an object
-   */
-  const genreData = [
-    'Personal Growth',
-    'True Crime and Investigative Journalism',
-    'History',
-    'Comedy',
-    'Entertainment',
-    'Business',
-    'Fiction',
-    'News',
-    'Kids and Family',
-  ];
+
   /**
    * Carousel array
    */
