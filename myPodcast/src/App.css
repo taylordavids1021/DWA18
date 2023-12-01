@@ -118,7 +118,7 @@ h1 {
 .favorite--icon {
   max-width: 5%;
   position: absolute;
-  right: 28rem;
+  right: 35rem;
 }
 /* .show--seasons {
   dis
@@ -232,5 +232,14 @@ footer {
 /* LoginForm */
 .main-heading {
   color: white;
+}
+@media (min-width: 375px) {
+  .navbar-container button {
+    font-size: 1rem;
+    /* padding: 0rem 2rem; */
+  }
+  .showPodcast--container {
+    margin: 5rem;
+  }
 }
 /* ------------------------------------------- END OF COMPONENTS STYLE ------------------------------------------- */
