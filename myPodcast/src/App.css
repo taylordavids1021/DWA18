@@ -85,14 +85,14 @@ h1 {
   align-items: center;
   margin-bottom: 20px;
   border: 1px solid #555; 
-  border-radius: 8px;
+  border-radius: 4rem;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 /* Display image style */
 .show--image {
-  max-width: 36%;
+  max-width: 20%;
   object-fit: cover;
   border-radius: 20%;
   margin: auto;
@@ -108,7 +108,7 @@ h1 {
 }
 /* Show description style */
 .show--description {
-  font-size: 16px;
+  font-size: 1rem;
 }
 /* Show info hover effect */
 .show-info:hover {
@@ -116,9 +116,9 @@ h1 {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Slightly darker box-shadow on hover with more depth */
 }
 .favorite--icon {
-  max-width: 5%;
+  max-width: 4%;
   position: absolute;
-  right: 35rem;
+  right: 42rem;
 }
 /* .show--seasons {
   dis
