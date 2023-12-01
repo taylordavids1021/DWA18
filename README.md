@@ -27,4 +27,4 @@ Clone the repository: git clone [repository_url]
 Install dependencies: npm install
 I suggest you run the development server using: npm run dev
 Deployment
-The app was deployed to a custom Netlify url: https://bejewelled-tarsier-7d2f97.netlify.app/
+The app was deployed to a custom Netlify url: https://marvelous-crepe-cef227.netlify.app/
