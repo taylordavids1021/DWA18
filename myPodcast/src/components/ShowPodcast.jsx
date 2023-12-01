@@ -37,7 +37,7 @@ const ShowPodcast = ({ podcastId, onFavoriteClick, onEpisodeComplete, onEpisodeP
    *  Render different UI based on loading and podcast data
    */
   if (loading) {
-    return <p className='loading--text'>Loading Viewed Podcast...</p>;
+    return <p className='loading--text'>Loading Selected Podcast...</p>;
   }
 
   if (!podcast) {
