@@ -28,6 +28,8 @@ export default function App() {
 
   /** 
    * Function to handle navigation to different pages
+   * This code is sorting the genreFilteredPodcasts array based on a specified sortOption. 
+   * It uses the sort method and a custom comparator function to determine the order of elements
    */
   const handleNavigation = (page) => {
     setCurrentPage(page);
@@ -66,6 +68,8 @@ export default function App() {
 
   /** 
    * Function to handle favorite button click and update favorites
+   * The handleFavoriteClick function you provided is designed to handle 
+   * the click event when a user wants to mark an episode as a favorite
    */
   const handleFavoriteClick = (episode) => {
     if (!favorites.some((fav) => fav.id === episode.id)) {
@@ -73,8 +77,16 @@ export default function App() {
     }
   };
 
+  /**
+   * In React, the useEffect hook is used to perform side effects in function components. 
+   * It establishes a relationship between the component and certain aspects of the component's 
+   * lifecycle or external events
+   */
+  
   /** 
    * Save the current page and selected podcast in localStorage whenever they change
+   * The useEffect hook you provided is used to persistently store values in the localStorage 
+   * whenever the currentPage or selectedPodcast dependencies change
    */
   useEffect(() => {
     localStorage.setItem('currentPage', currentPage);

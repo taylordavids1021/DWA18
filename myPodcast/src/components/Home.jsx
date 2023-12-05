@@ -41,13 +41,18 @@ const Home = ({ onPodcastClicks, selectedPodcast }) => {
 
   /** 
    * Handle Podcast Click
+   * This code is commonly used to create a handler function that can 
+   * be attached to an event, such as a click event on a podcast element
    */
   const handlePodcastClicks = (podcast) => {
     onPodcastClicks(podcast);
   };
 
   /**
-   *  Handle Search Input change
+   * Handle Search Input change
+   * This function is commonly used as an event handler for input fields, 
+   * such as a search input. When the user types into the input field, this function is triggered, 
+   * and it updates the search term based on the input value
    */
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
@@ -55,6 +60,8 @@ const Home = ({ onPodcastClicks, selectedPodcast }) => {
 
   /** 
    * Handle genre selection change
+   * When the user changes the selected sorting option, this function is triggered, 
+   * and it updates the sorting option in your application
    */
   const handleSortChanges = (event) => {
     setSortOption(event.target.value);
@@ -62,6 +69,8 @@ const Home = ({ onPodcastClicks, selectedPodcast }) => {
 
   /** 
    * Handle genre selection change
+   * When the user changes the selected genres, this function is triggered, 
+   * updating the state with the new selected values.
    */
   const handleGenreChanges = (event) => {
     const selectedGenreValues = event.target.value;
@@ -69,7 +78,8 @@ const Home = ({ onPodcastClicks, selectedPodcast }) => {
   };
 
   /**
-   *  Format date as a string
+   * Format date as a string
+   * This function is particularly useful for displaying dates in a user-friendly format in your application
    */
   const formatDate = (dateString) => {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -78,7 +88,9 @@ const Home = ({ onPodcastClicks, selectedPodcast }) => {
   };
 
   /**
-   *  Filter podcasts based on search term
+   * Filter podcasts based on search term
+   * This is a search function, where you want to find items that partially match a search term. 
+   * This filtering is based on substring inclusion, so it will match titles containing the search term anywhere in the title.
    */
   const filteredPodcasts = showPodcast.filter((show) =>
     show.title.toLowerCase().includes(searchTerm.toLowerCase())
@@ -86,6 +98,8 @@ const Home = ({ onPodcastClicks, selectedPodcast }) => {
 
   /** 
    * Filter podcasts based on selected genre
+   * This function renders when you want to filter items based on multiple criteria, 
+   * such as a search term and a selected genre
    */
   const genreFilteredPodcasts = selectedGenre
     ? filteredPodcasts.filter((show) =>
@@ -96,7 +110,9 @@ const Home = ({ onPodcastClicks, selectedPodcast }) => {
     : filteredPodcasts;
 
   /**
-   *  Sort Podcasts based on selected sort option
+   * Sort Podcasts based on selected sort option
+   * sortedPodcasts will contain the genreFilteredPodcasts array sorted based on the specified sorting option. 
+   * The sorting options include alphabetical order ('az' and 'za') and date order ('ascDate' and 'descDate')
    */
   const sortedPodcasts = [...genreFilteredPodcasts].sort((a, b) => {
     if (sortOption === 'az') {
@@ -143,6 +159,7 @@ const Home = ({ onPodcastClicks, selectedPodcast }) => {
           value={searchTerm}
           onChange={handleSearchChange}
         />
+        {/* Sort filter search */}
         <select value={sortOption} onChange={handleSortChanges}>
           <option value="az">Sort A-Z</option>
           <option value="za">Sort Z-A</option>
