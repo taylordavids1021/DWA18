@@ -1,6 +1,10 @@
 /**
  * The createClient function is used to create a new Supabase client instance. 
  * A Supabase client instance is a JavaScript object that you can use to interact with your Supabase database
+ * 
+ * supabase is a platform that provides a suite of tools and services for building applications.
+ * The real-time database aspect means that Supabase provides real-time updates and synchronization 
+ * of data across connected clients
  */
 import { createClient } from '@supabase/supabase-js';
 
